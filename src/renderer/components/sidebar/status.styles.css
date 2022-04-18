@@ -1,0 +1,17 @@
+.status-bar{
+  background-color: #000000;
+  min-width: 15vw;
+  padding: 2rem;
+}
+
+
+.nav-option{
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.nav-option li {
+  margin: .5rem 0;
+  display: flex;
+  align-items: center;
+}

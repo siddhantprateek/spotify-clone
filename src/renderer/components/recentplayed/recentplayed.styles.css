@@ -1,0 +1,14 @@
+.recently-played {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background-color: grey;
+  width: 15vw;
+  color: white;
+  margin: 1rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}

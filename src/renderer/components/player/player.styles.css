@@ -1,0 +1,49 @@
+.player-bar {
+  position: fixed;
+  background-color: #1e1e1e;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  padding: 1rem;
+
+  display: flex;
+}
+
+.left-actions {
+  display: flex;
+  align-items: center;
+}
+
+.music-poster {
+  height: 3rem;
+}
+
+.music-title {
+  padding: 0 1rem;
+  line-height: 1rem;
+}
+
+
+
+.play-btn{
+  color: white;
+}
+
+.volume-section {
+  width: 10rem;
+}
+
+.right-actions {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+}
+
+.expand, .mic {
+  transform: rotate(45deg);
+}
