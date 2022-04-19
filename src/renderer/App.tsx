@@ -1,4 +1,4 @@
-import { MemoryRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
+import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import SideBar from './components/sidebar/sidebar.components';
 import Dashboard from './routes/dashboard/dashboard.routes';

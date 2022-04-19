@@ -1,8 +1,19 @@
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Card from 'renderer/components/card/card.components';
+import RecentPlayed from '../../components/recentplayed/recentplayed.components';
 import icon from '../../../../assets/icon.svg';
 import './dashboard.style.css';
-import RecentPlayed from '../../components/recentplayed/recentplayed.components';
 
 const Dashboard = () => {
+  const [musics, setMusics] = useState([]);
+  useEffect(() => {
+    axios
+      .get('http://localhost:4000/api/all/music')
+      .then((res) => setMusics(res.data))
+      // eslint-disable-next-line no-console
+      .catch((err) => console.error(err));
+  }, []);
   return (
     <div className="dashboard-page">
       <div className="dashboard">
@@ -26,7 +37,14 @@ const Dashboard = () => {
       </div>
       <div className="featured-music-body">
         <h2>featuer Music Here</h2>
+        <div className="music-hits">
+          {musics?.map((music) => (
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            <Card {...music} />
+          ))}
+        </div>
       </div>
+      <div className="footer" />
     </div>
   );
 };
