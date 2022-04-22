@@ -1,14 +1,26 @@
 .recently-played {
   display: flex;
-  padding: 1rem;
   align-items: center;
-  background-color: grey;
-  width: 15vw;
+  justify-content: space-between;
+  background-color: #2a292c;
+  width: 20vw;
   color: white;
   margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.recently-played:hover {
+  background-color: #4d4d4d;
+}
+.icon {
+  height: 4rem;
+  width: 4rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  background-color: rgb(19, 91, 113);
 }
 
-.icon {
-  height: 2rem;
-  width: 2rem;
+.recent-container-content {
+  padding: 1rem;
 }
