@@ -1,21 +1,27 @@
-.status-bar{
+.status-bar {
   background-color: #000000;
   min-width: 15vw;
   padding: 2rem;
 }
 
-
-.nav-option{
+.nav-option {
   list-style: none;
   font-size: 1.2rem;
 }
 
 .nav-option li {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.nav-option li:hover {
+  color: white;
 }
 
+.nav-option p {
+  padding: 0 1rem;
+}
 .side-icons {
   height: 1.5rem;
   border-radius: 2px;
