@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import Card from 'renderer/components/card/card.components';
 import RecentPlayed from '../../components/recentplayed/recentplayed.components';
 import icon from '../../../../assets/icon.svg';
@@ -80,6 +81,7 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
+      <Link to="/library">Library</Link>
       <div className="footer" />
     </div>
   );

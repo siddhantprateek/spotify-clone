@@ -1,20 +1,18 @@
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import SideBar from './components/sidebar/sidebar.components';
-import Dashboard from './routes/dashboard/dashboard.routes';
+import { Dashboard, Library, Search } from './routes';
 import Player from './components/player/player.components';
-// import Library from './routes/library/library.routes';
-// import Search from './routes/search/search.routes';
 
 export default function App() {
   return (
     <div className="App">
-      <SideBar />
       <Router>
+        <SideBar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          {/* <Route path="/" element={<Search />} />
-          <Route path="/" element={<Library />} /> */}
+          <Route path="/search" element={<Search />} />
+          <Route path="/library" element={<Library />} />
         </Routes>
       </Router>
       <Player />
