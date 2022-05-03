@@ -2,6 +2,7 @@
   background-color: #000000;
   min-width: 15vw;
   padding: 2rem;
+  height: 100vh;
 }
 
 .nav-option {
@@ -25,4 +26,13 @@
 .side-icons {
   height: 1.5rem;
   border-radius: 2px;
+}
+
+.nav-option a {
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-option a:hover {
+  color: white;
 }

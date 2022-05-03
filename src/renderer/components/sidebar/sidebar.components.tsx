@@ -1,5 +1,6 @@
 import './status.styles.css';
 import HomeIcon from '@mui/icons-material/Home';
+import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import AddBoxIcon from '@mui/icons-material/AddBox';
@@ -12,15 +13,21 @@ const SideBar = () => {
       <ul className="nav-option">
         <li>
           <HomeIcon />
-          <p>Home</p>
+          <Link to="/">
+            <p>Home</p>
+          </Link>
         </li>
         <li>
           <SearchIcon />
-          <p>Search</p>
+          <Link to="/search">
+            <p>Search</p>
+          </Link>
         </li>
         <li>
           <LibraryMusicIcon />
-          <p>Your Library</p>
+          <Link to="/library">
+            <p>Your Library</p>
+          </Link>
         </li>
         <br />
         <li>
