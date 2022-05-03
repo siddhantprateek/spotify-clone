@@ -3,7 +3,13 @@
 import './card.styles.css';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 
-const Card = (props: any) => {
+interface MusicData {
+  music_name: string;
+  artist: string;
+  music_poster: string;
+}
+
+const Card = (props: MusicData) => {
   return (
     <div className="card-container">
       <img className="recent-music" src={props?.music_poster} alt="nice" />
