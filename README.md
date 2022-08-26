@@ -15,7 +15,7 @@
 - First Fork the repository
 
 ```shell
-git clone https://github.com/<user-name>/Vibee.git
+git clone https://github.com/<user-name>/spotify-clone.git
 
 ```
 
